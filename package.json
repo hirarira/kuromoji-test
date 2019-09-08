@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "kuromoji": "^0.1.2"
+    "fs": "0.0.1-security",
+    "kuromoji": "^0.1.2",
+    "markov-chain-kuromoji": "^1.0.1"
   }
 }

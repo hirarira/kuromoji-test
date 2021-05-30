@@ -12,6 +12,7 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "kuromoji": "^0.1.2",
-    "lodash": ">=4.17.21"
+    "lodash": ">=4.17.21",
+    "markov-chain-kuromoji": "^1.0.1"
   }
 }

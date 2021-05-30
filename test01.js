@@ -1,6 +1,5 @@
 "use strict"
 const kuromoji = require('kuromoji');
-console.log("test");
 kuromoji.builder({
   dicPath: './node_modules/kuromoji/dict'
 })

@@ -13,12 +13,13 @@ builder.build(async (err, tokenizer)=>{
   const resdAllStr = await fs.readFile(fileName, 'utf-8');
   const oneLines = resdAllStr.split('\n');
   let words = oneLines.reduce((base, line) => {
-    let lineWords = tokenizer.tokenize(line)
-    .map((word) => {
-      return word.surface_form
-    });
+    let lineWords = tokenizer.tokenize(line);
     return base.concat(lineWords);
   }, []);
   words = Array.from(new Set(words));
-  console.log(words);
+  const randomStr = [...Array(100)].reduce((base)=>{
+    const word = words[Math.floor(Math.random()*words.length)];
+    return `${base}${word.surface_form}`
+  }, '');
+  console.log(randomStr);
 })
